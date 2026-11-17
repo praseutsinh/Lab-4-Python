@@ -30,9 +30,9 @@ def toPirate(sentence):
     word = ""
 
     # Goes through each character in the sentence
-    for char in sentence:
+    for ch in sentence:
         # Checks if there is a space
-        if char == " ":
+        if ch == " ":
             # Checks if the word is in the dictionary
             if word in words:
                 word = words[word]
@@ -42,7 +42,7 @@ def toPirate(sentence):
             word = ""
         else:
             # Adds the character together
-            word += char
+            word += ch
 
     # Checks the last word
     if word in words:
