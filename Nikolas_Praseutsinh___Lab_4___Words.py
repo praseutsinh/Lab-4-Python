@@ -8,8 +8,8 @@ Lab 4: output the number of words in the sentence.
 def numWords(text):
     count = 0
 
-    for char in text:
-        if char == " ":
+    for letter in text:
+        if letter == " ":
             count += 1
 
     return count + 1
